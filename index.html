@@ -1,0 +1,351 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AYUSH CYBER LAB</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<canvas id="matrix"></canvas>
+
+<nav>
+
+<div class="logo">
+☠ AYUSH CYBER LAB
+</div>
+
+<div class="nav-links">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#terminal">Terminal</a>
+<a href="#login">Login</a>
+<a href="#ai">AI</a>
+<a href="#vault">Projects</a>
+<a href="#certificates">Certificates</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+<section id="home">
+
+<h1>☠ AYUSH CYBER LAB ☠</h1>
+
+<h3 id="typing"></h3>
+
+<p>
+Cybersecurity | Ethical Hacking | Python | Linux | Web Security
+</p>
+
+<button>Explore Lab</button>
+
+<button class="second">
+My Projects
+</button>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+Welcome to Ayush Cyber Lab.
+
+This dashboard is built for learning
+Cybersecurity, Linux, Python,
+Networking and Ethical Hacking.
+
+</p>
+
+</section>
+
+<section id="dashboard">
+
+<h2>⚡ CYBER SYSTEM DASHBOARD ⚡</h2>
+
+<div class="grid">
+
+<div class="card monitor">
+<h3>🖥 CPU</h3>
+<p id="cpu">Scanning...</p>
+</div>
+
+<div class="card monitor">
+<h3>💾 RAM</h3>
+<p id="ram">Checking...</p>
+</div>
+
+<div class="card monitor">
+<h3>🌐 Network</h3>
+<p id="network">Secure</p>
+</div>
+
+<div class="card monitor">
+<h3>🛡 Security</h3>
+<p id="security">Protected</p>
+</div>
+
+</div>
+
+<div class="terminal">
+
+<p id="terminalText">
+
+Booting Ayush Cyber System...
+
+</p>
+
+</div>
+
+</section>
+
+<section id="terminal">
+
+<h2>⚡ CYBER TERMINAL ⚡</h2>
+
+<div class="terminal-box">
+
+<div id="terminalOutput">
+
+Ayush Cyber Terminal v1.0
+
+<br>
+
+Type "help" to view commands...
+
+</div>
+
+<input
+
+id="terminalInput"
+
+placeholder="Enter command..."
+
+autocomplete="off"
+
+>
+
+</div>
+
+</section>
+
+<section id="login">
+
+<h2>🔐 CYBER ACCESS</h2>
+
+<div class="login-box">
+
+<h3>Secure Login</h3>
+
+<input id="username" placeholder="Username">
+
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="login()">
+
+ACCESS SYSTEM
+
+</button>
+
+<p id="loginStatus"></p>
+
+</div>
+
+</section>
+
+<section id="ai">
+
+<h2>🤖 AYUSH AI CYBER ASSISTANT</h2>
+
+<div class="ai-box">
+
+<div id="aiResponse">
+
+AI System Online...
+
+<br>
+
+Ask me about Cybersecurity.
+
+</div>
+
+<input
+
+id="aiInput"
+
+placeholder="Ask something..."
+
+>
+
+<button onclick="askAI()">
+
+SEND
+
+</button>
+
+</div>
+
+</section>
+<section id="vault">
+
+<h2>📁 PROJECT VAULT</h2>
+
+<div class="grid">
+
+<div class="card project-card">
+<h3>🛡 Cyber Dashboard</h3>
+<p>Advanced cybersecurity dashboard with monitoring and terminal.</p>
+<button>VIEW</button>
+</div>
+
+<div class="card project-card">
+<h3>🐍 Python Security Tools</h3>
+<p>Automation scripts and cybersecurity utilities.</p>
+<button>VIEW</button>
+</div>
+
+<div class="card project-card">
+<h3>🌐 Web Security Lab</h3>
+<p>Practice area for web application security.</p>
+<button>VIEW</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="certificates">
+
+<h2>🏆 CERTIFICATES</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Cybersecurity</h3>
+<p>Coming Soon...</p>
+</div>
+
+<div class="card">
+<h3>Python Programming</h3>
+<p>Coming Soon...</p>
+</div>
+
+<div class="card">
+<h3>Linux Administration</h3>
+<p>Coming Soon...</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>⚡ SECURITY SKILL MATRIX ⚡</h2>
+
+<div class="skill-box">
+
+<p>Linux</p>
+<div class="bar"><span style="width:85%"></span></div>
+
+<p>Python</p>
+<div class="bar"><span style="width:75%"></span></div>
+
+<p>Networking</p>
+<div class="bar"><span style="width:70%"></span></div>
+
+<p>Web Security</p>
+<div class="bar"><span style="width:65%"></span></div>
+
+</div>
+
+<h2>🏆 ACHIEVEMENT TIMELINE</h2>
+
+<div class="timeline">
+
+<div class="event">
+2025 - Started Cybersecurity Journey
+</div>
+
+<div class="event">
+2026 - Built Ayush Cyber Lab
+</div>
+
+<div class="event">
+Future - Become a Professional Ethical Hacker
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>📬 CONTACT</h2>
+
+<div class="card">
+
+<p>Email</p>
+<p>ayushcyberlab@gmail.com</p>
+
+<p>Location</p>
+<p>Himachal Pradesh, India</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>☠ AYUSH CYBER LAB ☠</h3>
+
+<p>
+Cybersecurity | Ethical Hacking | Linux | Python
+</p>
+
+<p>
+© 2026 Ayush Cyber Lab. All Rights Reserved.
+</p>
+<section id="password-tool">
+
+<h2>🔐 Password Generator</h2>
+
+<div class="card">
+
+<input
+type="text"
+id="generatedPassword"
+placeholder="Generated Password"
+readonly>
+
+<br><br>
+
+<button onclick="generatePassword()">
+Generate Password
+</button>
+
+<button onclick="copyPassword()">
+Copy Password
+</button>
+
+</div>
+
+</section>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
