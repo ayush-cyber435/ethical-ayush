@@ -1167,3 +1167,100 @@ text-align:center;
 border-radius:10px;
 
 }
+.cursor-dot{
+position:fixed;
+width:12px;
+height:12px;
+background:#00ff66;
+border-radius:50%;
+pointer-events:none;
+box-shadow:0 0 20px #00ff66;
+z-index:9999;
+transition:transform .08s linear;
+}
+nav{
+
+animation:navGlow 3s infinite alternate;
+
+}
+
+@keyframes navGlow{
+
+from{
+
+box-shadow:0 0 10px #00ff66;
+
+}
+
+to{
+
+box-shadow:0 0 40px #00ff66;
+
+}
+
+}
+#strengthInput{
+
+width:80%;
+
+padding:15px;
+
+background:#000;
+
+border:2px solid #00ff66;
+
+color:#00ff66;
+
+font-size:18px;
+
+border-radius:10px;
+
+outline:none;
+
+}
+#qrInput{
+
+width:80%;
+
+max-width:500px;
+
+padding:15px;
+
+background:#000;
+
+color:#00ff66;
+
+border:2px solid #00ff66;
+
+border-radius:10px;
+
+font-size:18px;
+
+outline:none;
+
+}
+
+#qrImage{
+
+margin-top:20px;
+
+border:2px solid #00ff66;
+
+padding:10px;
+
+background:white;
+
+}
+#qrcode{
+
+margin-top:20px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+
+
+
