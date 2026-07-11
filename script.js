@@ -1,4 +1,4 @@
- const canvas = document.getElementById("matrix");
+const canvas = document.getElementById("matrix");
 const ctx = canvas.getContext("2d");
 
 
@@ -712,7 +712,7 @@ buttons.forEach(btn => {
     }
 
 });
-document.querySelectorAll(".project-card button").forEach((btn,index)=>{
+ocument.querySelectorAll(".project-card button").forEach((btn,index)=>{
 
 btn.addEventListener("click",()=>{
 
@@ -778,3 +778,82 @@ navigator.clipboard.writeText(input.value);
 alert("Password copied successfully!");
 
 }
+// Browser Information
+
+console.log("===== AYUSH CYBER LAB =====");
+
+console.log("Browser :", navigator.userAgent);
+
+console.log("Language :", navigator.language);
+
+console.log("Platform :", navigator.platform);
+
+console.log("Online :", navigator.onLine);
+
+console.log("Screen :", screen.width + " x " + screen.height);
+
+console.log("===========================");
+let devtoolsOpen = false;
+
+setInterval(() => {
+
+    const widthThreshold = window.outerWidth - window.innerWidth > 160;
+    const heightThreshold = window.outerHeight - window.innerHeight > 160;
+
+    if ((widthThreshold || heightThreshold) && !devtoolsOpen) {
+        devtoolsOpen = true;
+        console.log("⚠ Developer Tools Detected");
+    }
+
+}, 1000);
+console.clear();
+
+console.log("%cAYUSH CYBER LAB","color:#00ff66;font-size:30px;font-weight:bold;");
+
+console.log("%cAUTHORIZED USERS ONLY","color:red;font-size:18px;");
+
+console.log("%cSystem Loaded Successfully","color:#00ff66;");
+const dot=document.createElement("div");
+
+dot.className="cursor-dot";
+
+document.body.appendChild(dot);
+
+document.addEventListener("mousemove",(e)=>{
+
+dot.style.left=e.clientX+"px";
+
+dot.style.top=e.clientY+"px";
+
+});
+function checkStrength() {
+
+    const password = document.getElementById("strengthInput").value;
+    const result = document.getElementById("strengthResult");
+
+    if (password.length < 8) {
+        result.innerHTML = "🔴 Weak";
+    } else {
+        result.innerHTML = "🟢 Strong";
+    }
+
+}
+function generateQR() {
+
+    const text = document.getElementById("qrInput").value.trim();
+
+    if (text === "") {
+        alert("Enter text or URL first!");
+        return;
+    }
+
+    document.getElementById("qrcode").innerHTML = "";
+
+    new QRCode(document.getElementById("qrcode"), {
+        text: text,
+        width: 250,
+        height: 250
+    });
+
+}
+
