@@ -7,7 +7,7 @@
 <title>AYUSH CYBER LAB</title>
 
 <link rel="stylesheet" href="style.css">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 
 <body>
@@ -298,7 +298,7 @@ Future - Become a Professional Ethical Hacker
 <div class="card">
 
 <p>Email</p>
-<p>ayushcyberlab@gmail.com</p>
+<p>oferayus@.com</p>
 
 <p>Location</p>
 <p>Himachal Pradesh, India</p>
@@ -342,10 +342,108 @@ Copy Password
 
 </div>
 
+<br><br>
+
+<h2>💪 Password Strength Checker</h2>
+
+<div class="card">
+
+<input
+type="password"
+id="strengthInput"
+placeholder="Enter Password"
+oninput="checkStrength()">
+
+<h3 id="strengthResult">
+🔵 Enter Password
+</h3>
+
+</div>
+
+<br><br>
+
+<h2>📋 Base64 Encoder / Decoder</h2>
+
+<div class="card">
+
+<textarea
+id="baseInput"
+placeholder="Enter Text"
+rows="4"
+style="width:90%;"></textarea>
+
+<br><br>
+
+<button onclick="encodeBase64()">
+Encode
+</button>
+
+<button onclick="decodeBase64()">
+Decode
+</button>
+
+<br><br>
+
+<textarea
+id="baseOutput"
+placeholder="Result"
+rows="4"
+style="width:90%;"
+readonly></textarea>
+<h2>🔑 SHA-256 Hash Generator</h2>
+
+<div class="card">
+
+<textarea
+id="hashInput"
+placeholder="Enter Text"
+rows="4"
+style="width:90%;"></textarea>
+
+<br><br>
+
+<button onclick="generateHash()">
+Generate Hash
+</button>
+
+<br><br>
+
+<textarea
+id="hashOutput"
+placeholder="SHA-256 Result"
+rows="5"
+style="width:90%;"
+readonly></textarea>
+
+</div>
+
+</section>
+<section id="qrtool">
+
+<h2>📱 QR Code Generator</h2>
+
+<div class="card">
+
+<input
+id="qrInput"
+type="text"
+placeholder="Enter Text or URL">
+
+<br><br>
+
+<button onclick="generateQR()">
+Generate QR
+</button>
+
+<br><br>
+
+<div id="qrcode"></div>
+
 </section>
 </footer>
 
 <script src="script.js"></script>
+<script src="tools.js"></script>
 
 </body>
 </html>
